@@ -15,11 +15,7 @@ describe Lunartic::Moon do
     end
 
     it 'should return the correct cycle day for the given date' do
-      FIXTURES.each do |known|
-        date = Date.new(known[:date_year], known[:date_month], known[:date_day])
-        moon = Lunartic::Moon.new date
-        expect(moon.day).to eql known[:day]
-      end
+      test_method_against_fixtures :day
     end
   end
 
@@ -29,11 +25,7 @@ describe Lunartic::Moon do
     end
 
     it 'should return the correct percentage full for the given date' do
-      FIXTURES.each do |known|
-        date = Date.new(known[:date_year], known[:date_month], known[:date_day])
-        moon = Lunartic::Moon.new date
-        expect(moon.percent_full).to eql known[:percent]
-      end
+      test_method_against_fixtures :percent_full
     end
   end
 
@@ -43,11 +35,7 @@ describe Lunartic::Moon do
     end
 
     it 'should return the correct moon phase for a given date' do
-      FIXTURES.each do |known|
-        date = Date.new(known[:date_year], known[:date_month], known[:date_day])
-        moon = Lunartic::Moon.new date
-        expect(moon.phase).to eql known[:phase]
-      end
+      test_method_against_fixtures :phase
     end
   end
 end
