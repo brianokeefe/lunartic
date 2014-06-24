@@ -1,4 +1,3 @@
-require 'date'
 require 'spec_helper'
 
 describe Lunartic do
