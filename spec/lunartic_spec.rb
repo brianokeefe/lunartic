@@ -9,7 +9,7 @@ describe Lunartic do
     end
 
     it "should create a Lunartic::Moon using today's date" do
-      expect(subject).to eql Lunartic::Moon.new(Date.today)
+      expect(subject.day).to eql Lunartic::Moon.new(Date.today).day
     end
   end
 
@@ -21,7 +21,7 @@ describe Lunartic do
     end
 
     it 'should create a Lunartic::Moon using the specified date' do
-      expect(subject).to eql Lunartic::Moon.new(Date.new(1989, 12, 28))
+      expect(subject.day).to eql Lunartic::Moon.new(Date.new(1989, 12, 28)).day
     end
   end
 end

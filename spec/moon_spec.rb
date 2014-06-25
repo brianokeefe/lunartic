@@ -11,7 +11,7 @@ describe Lunartic::Moon do
 
   describe '#day' do
     it 'should return a fixnum' do
-      expect(subject).to be_a Fixnum
+      expect(subject.day).to be_a Fixnum
     end
 
     it 'should return the correct cycle day for the given date' do
@@ -21,7 +21,7 @@ describe Lunartic::Moon do
 
   describe '#percent_full' do
     it 'should return a float' do
-      expect(subject).to be_a Float
+      expect(subject.percent_full).to be_a Float
     end
 
     it 'should return the correct percentage full for the given date' do
@@ -31,7 +31,7 @@ describe Lunartic::Moon do
 
   describe '#phase' do
     it 'should return a symbol' do
-      expect(subject).to be_a Symbol
+      expect(subject.phase).to be_a Symbol
     end
 
     it 'should return the correct moon phase for a given date' do
