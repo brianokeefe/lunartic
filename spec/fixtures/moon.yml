@@ -1,5 +1,12 @@
 - date_year: 1989
   date_month: 12
+  date_day: 27
+  day: 28
+  phase: :waning_crescent
+  percent_full: 0.10366124838343745
+
+- date_year: 1989
+  date_month: 12
   date_day: 28
   day: 0
   phase: :new
@@ -10,46 +17,53 @@
   date_day: 31
   day: 3
   phase: :waxing_crescent
-  percent_full: 0.21428571428571427
+  percent_full: 0.20317915195891742
 
 - date_year: 1990
   date_month: 1
   date_day: 4
   day: 7
   phase: :first_quarter
-  percent_full: 0.5
+  percent_full: 0.47408468790414066
 
 - date_year: 1990
   date_month: 1
   date_day: 7
   day: 10
   phase: :waxing_gibbous
-  percent_full: 0.7142857142857143
+  percent_full: 0.677263839863058
 
 - date_year: 1990
   date_month: 1
-  date_day: 11
-  day: 14
+  date_day: 12
+  day: 15
   phase: :full
-  percent_full: 1.0
+  percent_full: 0.9841042402054129
 
 - date_year: 1990
   date_month: 1
   date_day: 15
   day: 18
   phase: :waning_gibbous
-  percent_full: 0.7142857142857143
+  percent_full: 0.7809250882464955
 
 - date_year: 1990
   date_month: 1
-  date_day: 18
-  day: 21
+  date_day: 19
+  day: 22
   phase: :last_quarter
-  percent_full: 0.5
+  percent_full: 0.5100195523012723
 
 - date_year: 1990
   date_month: 1
   date_day: 22
   day: 25
   phase: :waning_crescent
-  percent_full: 0.21428571428571427
+  percent_full: 0.3068404003423549
+
+- date_year: 1990
+  date_month: 1
+  date_day: 26
+  day: 0
+  phase: :new
+  percent_full: 0.0
