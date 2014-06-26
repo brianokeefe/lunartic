@@ -1,4 +1,6 @@
 # Lunartic
+[![Gem Version](https://badge.fury.io/rb/lunartic.svg)](http://badge.fury.io/rb/lunartic)
+[![Code Climate](https://codeclimate.com/github/brianokeefe/lunartic.png)](https://codeclimate.com/github/brianokeefe/lunartic)
 
 Calculate the approximate phase of the moon on a given date.
 
