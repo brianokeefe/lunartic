@@ -29,7 +29,7 @@ irb(main):001:0> require 'lunartic'
   => true
 
 # get moon data for today
-irb(main):002:0> moon = Lunartic.now
+irb(main):002:0> moon = Lunartic.today
   => #<Lunartic::Moon:0x007fa5028e4dc0 @date=#<Date: 2014-06-25 ((2456834j,0s,0n),+0s,2299161j)>>
 irb(main):003:0> moon.day
   => 27

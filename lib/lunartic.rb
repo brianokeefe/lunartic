@@ -8,6 +8,8 @@ module Lunartic
       Lunartic::Moon.new Date.today
     end
 
+    alias_method :today, :now
+
     def on_date(date)
       Lunartic::Moon.new date
     end
