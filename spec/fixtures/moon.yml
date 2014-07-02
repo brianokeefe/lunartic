@@ -67,3 +67,18 @@
   day: 0
   phase: :new
   percent_full: 0.0
+
+- date_year: 1803
+  date_month: 1
+  date_day: 23
+  day: 0
+  phase: :new
+  percent_full: 0.0
+
+- date_year: 2103
+  date_month: 1
+  date_day: 8
+  day: 0
+  phase: :new
+  percent_full: 0.0
+

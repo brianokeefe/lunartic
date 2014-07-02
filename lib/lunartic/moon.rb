@@ -2,9 +2,8 @@ module Lunartic
   class Moon
     attr_reader :date
 
-    # TODO: we can achieve greater accuracy by adding more
-    # known new moon dates and using the closest one
-    KNOWN_NEW_MOON = Date.new 1900, 1, 1
+    KNOWN_NEW_MOONS = [Date.new(1800, 1, 25), Date.new(1900, 1, 1),
+                       Date.new(2000, 1, 6), Date.new(2100, 1, 10)]
 
     SYNODIC_MONTH = 29.530588853
     HALF_SYNODIC_MONTH = 29.530588853 / 2
@@ -15,7 +14,8 @@ module Lunartic
     end
 
     def day
-      day = ((@date.jd - KNOWN_NEW_MOON.jd) % SYNODIC_MONTH).floor
+      closest_known = KNOWN_NEW_MOONS.select { |d| d < @date}.max || KNOWN_NEW_MOONS.first
+      day = ((@date.jd - closest_known.jd) % SYNODIC_MONTH).floor
       return 0 if day >= SYNODIC_MONTH.floor
       day
     end
@@ -46,3 +46,4 @@ module Lunartic
     end
   end
 end
+
